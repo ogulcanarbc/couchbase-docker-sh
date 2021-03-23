@@ -2,7 +2,7 @@
     environment:
       CB_REST_USERNAME: Administrator
       CB_REST_PASSWORD: password123
-      BUCKET: phone-number-mask-history
+      BUCKET: user-info
       STARTUP_TIMEOUT: 100 #default: 60 (seconds)
       BUCKET_WAIT_TIME: 60 #default: 60 (seconds)
       RAM_SIZE_MB: 256 #default: 256 (mb)
