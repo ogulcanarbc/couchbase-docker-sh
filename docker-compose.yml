@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  couchbase:
+    image: "oglcnarbc/couchbase:latest"
+    container_name: "couchbase"
+    ports:
+      - "8091-8094:8091-8094"
+      - "11210:11210"
+    environment:
+      CB_REST_USERNAME: Administrator
+      CB_REST_PASSWORD: password123
+      BUCKET: user-info
+      STARTUP_TIMEOUT: 100
+      BUCKET_WAIT_TIME: 60
+      RAM_SIZE_MB: 256
+      ENABLE_FLUSH: 1
+      BUCKET_RAM_SIZE_MB: 256
